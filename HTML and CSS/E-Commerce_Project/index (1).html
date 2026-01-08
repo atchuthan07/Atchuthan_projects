@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign in - HomeStyle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="topbar-content">
+            <h1>HomeStyle.in</h1>
+            <nav>
+                <a href="index.html">Account</a>
+                <a href="products.html">Collections</a>
+                <a href="cart.html">Cart</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div
+            style="background: white; padding: 20px; border-radius: 4px; width: 100%; max-width: 350px; border: 1px solid #ddd;">
+            <h2 style="margin-top: 0;">Sign in</h2>
+            <label>Email</label>
+            <input type="text" id="e" style="width: 100%;">
+            <label>Password</label>
+            <input type="password" id="p" style="width: 100%;">
+            <button onclick="login()" style="width: 100%; margin-top: 10px;">Continue</button>
+            <p style="font-size: 0.8rem; margin-top: 15px;">By continuing, you agree to HomeStyle's Conditions of Use.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function login() {
+            var email = document.getElementById('e').value;
+            var pass = document.getElementById('p').value;
+            if (email == 'atchuthan@gmail.com' && pass == 'Demo@123') {
+                window.location.href = 'products.html';
+            } else {
+                alert('Invalid email or password.');
+            }
+        }
+    </script>
+
+    <footer>
+        <p>© 2026, HomeStyle.com, Inc. or its affiliates</p>
+    </footer>
+
+</body>
+
+</html>

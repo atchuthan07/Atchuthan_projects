@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  font-family: "Amazon Ember", Arial, sans-serif;
+  background: #eaeded;
+  color: #0f1111;
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #131921;
+  color: white;
+  padding: 8px 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar-content {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #FF9900;
+  cursor: pointer;
+}
+
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+}
+
+nav a:hover {
+  border: 1px solid white;
+}
+
+.container {
+  margin-top: 80px;
+  padding: 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+p {
+  text-align: left;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.center-list {
+  max-width: 300px;
+  margin: 20px 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+.center-list li::before {
+  content: "✓ ";
+  color: #c45500;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 8px;
+  width: 300px;
+  display: block;
+  margin: 10px 0;
+  border-radius: 3px;
+  border: 1px solid #a6a6a6;
+}
+
+button {
+  padding: 8px 20px;
+  background: #FFD814;
+  border: 1px solid #FCD200;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px 0 rgba(213, 217, 217, .5);
+}
+
+button:hover {
+  background: #F7CA00;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+.card a {
+  background: #FFD814;
+  color: #0F1111;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  border: 1px solid #FCD200;
+  margin-top: auto;
+}
+
+.card a:hover {
+  background: #F7CA00;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background: #232f3e;
+  color: white;
+  margin-top: 40px;
+}

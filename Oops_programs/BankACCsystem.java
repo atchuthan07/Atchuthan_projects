@@ -26,8 +26,6 @@ public class BankACCsystem {
                 System.out.println("Insufficient balance");
             }
         }
-
-        // ✅ accountNumber is USED here
         void displayAccount() {
             System.out.println("Account Number: " + accountNumber);
             System.out.println("Balance: " + balance);
@@ -47,8 +45,6 @@ public class BankACCsystem {
 
         System.out.print("Enter withdraw amount: ");
         acc.withdraw(sc.nextDouble());
-
-        // ✅ using accountNumber through method
         acc.displayAccount();
 
         sc.close();
